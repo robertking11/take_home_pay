@@ -1,0 +1,257 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.main-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sliders {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.slider-group {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.slider-label {
+  margin-left: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 1.08rem;
+  text-align: left;
+}
+
+.slider-value {
+  font-weight: 700;
+  color: #2a5d9f;
+  margin-left: 0.5rem;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #2a5d9f;
+  margin-bottom: 0.2rem;
+}
+
+.calculate-btn {
+  display: block;
+  margin: 2rem auto 2.5rem auto;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  background: #ff7a59;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.calculate-btn:hover {
+  background: #e65c3a;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.summary-cards {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.summary-card {
+  background: #f5f8fa;
+  border-radius: 8px;
+  padding: 1.2rem 2.5rem;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
+  min-width: 260px;
+  text-align: center;
+}
+
+.summary-label {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #2a5d9f;
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.01em;
+}
+
+.summary-value {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.chart-container {
+  width: 85%;
+  margin: 0 auto 2.5rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.chart-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+}
+
+.table-toggle {
+  margin: 2rem 0 1rem 0;
+  text-align: center;
+}
+
+.table-toggle button {
+  margin: 0 0.7rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background: #e0e7ef;
+  color: #2a5d9f;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.table-toggle button:disabled {
+  background: #b0b8c1;
+  color: #fff;
+}
+
+.table-toggle button:not(:disabled):hover {
+  background: #b3c6e0;
+}
+
+.table-container {
+  width: 85%;
+  margin: 0 auto 2.5rem auto;
+  overflow-x: auto;
+}
+
+.styled-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  font-size: 0.97rem;
+  background: #fff;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.03);
+}
+
+.styled-table th, .styled-table td {
+  border: 1px solid #e5e5e5;
+  padding: 0.35rem 0.6rem;
+  text-align: right;
+}
+
+.styled-table th.group-header {
+  background: #f3f6fa;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.05rem;
+  border-bottom: none;
+}
+
+.styled-table th.sub-header {
+  background: #f8fafc;
+  font-size: 0.98rem;
+  border-top: none;
+}
+
+.styled-table td.salary-cell {
+  background: #f8fafc;
+}
+
+.styled-table td.plan2-cell, .styled-table th.group-2 {
+  background: #f6fbf6;
+}
+
+.styled-table td.pgl-cell, .styled-table th.group-3 {
+  background: #faf6fb;
+}
+
+.styled-table tr:nth-child(even) td {
+  background: #fcfcfd;
+}
+
+.styled-table th, .styled-table td {
+  border-width: 1px;
+  border-color: #e5e5e5;
+}
+
+.styled-table th, .styled-table td {
+  border-style: solid;
+}
+
+@media (max-width: 900px) {
+  .sliders, .chart-container, .table-container {
+    width: 98%;
+  }
+  .slider-group {
+    width: 98%;
+  }
+}
+
+.custom-container {
+  width: 75vw;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.custom-sliders {
+  width: 75vw;
+  max-width: 900px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.custom-slider-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.custom-slider-label {
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+  font-size: 1.08rem;
+  text-align: left;
+}
+
+.custom-input, .custom-slider {
+  width: 100%;
+  max-width: 100%;
+  font-size: 1.08rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #b0b8c1;
+  margin-bottom: 0.2rem;
+}
+
+.custom-slider, input[type="range"] {
+  width: 100%;
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
